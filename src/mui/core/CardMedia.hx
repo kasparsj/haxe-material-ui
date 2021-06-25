@@ -11,6 +11,9 @@ typedef CardMediaProps = {
 	@:optional var classes:Record<CardMediaClassKey>;
 	@:optional var image:String;
 	@:optional var src:String;
+    // todo: QUICK FIX!!
+    @:optional var controls:Bool;
+    @:optional var autoPlay:Bool;
 }
 
 @:jsRequire('@material-ui/core', 'CardMedia')
