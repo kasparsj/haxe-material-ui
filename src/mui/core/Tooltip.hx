@@ -8,8 +8,9 @@ import mui.core.popper.TooltipClassKey;
 import mui.core.styles.Classes;
 
 typedef TooltipProps = ForcedOverride<StandardDOMAttributes, {
-	var children:ReactElement;
+	var children:ReactFragment;
 	var title:ReactFragment;
+	@:optional var arrow:Bool;
 	@:optional var classes:Record<TooltipClassKey>;
 	@:optional var disableFocusListener:Bool;
 	@:optional var disableHoverListener:Bool;
